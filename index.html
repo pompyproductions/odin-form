@@ -42,14 +42,20 @@
                     <label for="last-name">LAST NAME</label>
                     <input type="text" name="last-name" id="last-name">
                 </div>
-                <div class="input-group">
+                <div class="input-group double-width">
                     <label for="email">EMAIL</label>
                     <input type="email" name="email" id="email">
                 </div>
                 <div class="input-group">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <label for="reasons">RELATIONSHIP WITH POMPY</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="reasons" value="friend">Friend
+                        <input type="checkbox" name="reasons" value="family">Family
+                        <input type="checkbox" name="reasons" value="fan">Fan
+                        <input type="checkbox" name="reasons" value="stalker">Stalker
+                    </div>
                 </div>
+                <button type="submit">Sign me up!</button>
             </section>
         </form>
     </main>
