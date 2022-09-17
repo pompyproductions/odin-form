@@ -31,7 +31,7 @@
             </p>
             
         </div>
-        <form action="#">
+        <form action="#" id="sign-up">
             <p>Please do not fill this in with real and/or sensitive information.</p>
             <section>
                 <div class="input-group">
@@ -47,16 +47,36 @@
                     <input type="email" name="email" id="email">
                 </div>
                 <div class="input-group">
-                    <label for="reasons">RELATIONSHIP WITH POMPY</label>
+                    <label>RELATIONSHIP WITH POMPY</label>
                     <div class="checkbox-group">
-                        <input type="checkbox" name="reasons" value="friend">Friend
-                        <input type="checkbox" name="reasons" value="family">Family
-                        <input type="checkbox" name="reasons" value="fan">Fan
-                        <input type="checkbox" name="reasons" value="stalker">Stalker
+                        <label for="friend" class="checkbox-label">
+                            <input type="checkbox" name="reasons" id="friend" value="friend">
+                            Friend
+                        </label>
+                        <label for="family" class="checkbox-label">
+                            <input type="checkbox" name="reasons" id="family" value="family">
+                            Family
+                        </label>
+                        <label for="fan" class="checkbox-label">
+                            <input type="checkbox" name="reasons" id="fan" value="fan">
+                            Fan
+                        </label>
+                        <label for="stalker" class="checkbox-label">
+                            <input type="checkbox" name="reasons" id="fan" value="stalker">
+                            Stalker
+                        </label>
                     </div>
                 </div>
-                <button type="submit">Sign me up!</button>
             </section>
         </form>
+        <div class="bottom">
+            <div class="checkbox-group">
+                <label for="terms" class="checkbox-label">
+                    <input type="checkbox" name="terms" id="terms" value="terms">
+                    I have read and understood the Terms and Pompitions.
+                </label>
+            </div>
+            <button type="submit" form="sign-up">Sign me up!</button>
+        </div>
     </main>
 </body>
