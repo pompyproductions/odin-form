@@ -10,6 +10,7 @@ html {
 :root {
     --background: rgb(234 227 232);
     --teal: rgb(153 203 201);
+    --teal-dark: hsl(178, 32%, 50%);
     --pink: rgb(249 176 184);
     --white: rgb(242 245 255);
     --black: rgb(49 48 46);
@@ -172,6 +173,7 @@ button {
     flex: 1 0 auto;
     transition: all 120ms;
     color: var(--black);
+    cursor: pointer;
 }
 button:hover {
     box-shadow: 0px 3px 6px 6px rgba(49, 48, 46, 0.12);
@@ -209,4 +211,12 @@ fieldset {
 
 fieldset>ul {
     gap: 12px;
+}
+
+.inline-link {
+    display: inline;
+    text-decoration: underline;
+}
+.inline-link:hover {
+    color: var(--teal-dark);
 }
