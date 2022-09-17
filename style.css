@@ -108,7 +108,7 @@ main {
 }
 
 form {
-    /* background-color: white; */
+    background: linear-gradient(90deg, #eae3e8, hsl(317deg 14% 92%));
     margin: 3vh 3vw;
     padding: 2vh 2vw;
     border-radius: 8px;
@@ -117,10 +117,15 @@ form {
     flex-direction: column;
     gap: 2vh;
     color: var(--black);
+    transition: all 120ms;
+}
+
+form:hover, form:active {
+    box-shadow: 0px 3px 6px 6px rgba(49, 48, 46, 0.12);
 }
 
 .bottom {
-    margin: 0 5vw;
+    margin: 0 3vw 0 5vw;
     display: flex;
     justify-content: stretch;
     gap: 3vw;
@@ -154,18 +159,20 @@ form input {
 }
 
 button {
-    align-self: flex-end;
-    background-color: var(--white);
+    background-color: var(--background);
+    background: linear-gradient(90deg, #eae3e8, hsl(317deg 14% 92%));
     border: none;
-    box-shadow: 3px 3px var(--pink);
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px 6px rgba(49, 48, 46, 0.05);
     height: 30px;
     flex: 1 0 auto;
+    transition: all 120ms;
 }
 button:hover {
-    box-shadow: 3px 3px var(--teal);
+    box-shadow: 0px 3px 6px 6px rgba(49, 48, 46, 0.12);
 }
 button:active {
-    box-shadow: inset 3px 3px var(--teal);
+    box-shadow: inset 3px 3px 3px 3px rgba(49, 48, 46, 0.05);
     background-color: var(--background);
     transform: translateY(2px);
 }
