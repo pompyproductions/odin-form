@@ -35,44 +35,45 @@
             <p>Please do not fill this in with real and/or sensitive information.</p>
             <section>
                 <div class="input-group">
-                    <label for="first-name">FIRST NAME</label>
+                    <label for="first-name">FIRST NAME:</label>
                     <input type="text" name="first-name" id="first-name">
                 </div>
                 <div class="input-group">
-                    <label for="last-name">LAST NAME</label>
+                    <label for="last-name">LAST NAME:</label>
                     <input type="text" name="last-name" id="last-name">
                 </div>
                 <div class="input-group double-width">
-                    <label for="email">EMAIL</label>
+                    <label for="email">EMAIL:</label>
                     <input type="email" name="email" id="email">
                 </div>
-                <div class="input-group">
-                    <label>RELATIONSHIP WITH POMPY</label>
-                    <div class="checkbox-group">
-                        <label for="friend" class="checkbox-label">
-                            <input type="checkbox" name="reasons" id="friend" value="friend">
-                            Friend
-                        </label>
-                        <label for="family" class="checkbox-label">
-                            <input type="checkbox" name="reasons" id="family" value="family">
-                            Family
-                        </label>
-                        <label for="fan" class="checkbox-label">
-                            <input type="checkbox" name="reasons" id="fan" value="fan">
-                            Fan
-                        </label>
-                        <label for="stalker" class="checkbox-label">
-                            <input type="checkbox" name="reasons" id="fan" value="stalker">
-                            Stalker
-                        </label>
-                    </div>
-                </div>
+                <fieldset class="double-width">
+                    <legend>RELATIONSHIP WITH POMPY:</legend>
+                    <div class="separator"></div>
+                    <ul class="radio-group">
+                        <li>
+                            <input type="radio" name="reasons" id="fan" value="fan" checked>
+                            <label for="fan">Fan</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="reasons" id="friend" value="friend">
+                            <label for="friend">Friend</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="reasons" id="family" value="family">
+                            <label for="family">Family</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="reasons" id="stalker" value="stalker">
+                            <label for="stalker">Stalker</label>
+                        </li>
+                    </ul>
+                </fieldset>
             </section>
         </form>
         <div class="bottom">
             <div class="checkbox-group">
                 <label for="terms" class="checkbox-label">
-                    <input type="checkbox" name="terms" id="terms" value="terms">
+                    <input type="checkbox" name="terms" id="terms" value="true">
                     I have read and understood the Terms and Pompitions.
                 </label>
             </div>

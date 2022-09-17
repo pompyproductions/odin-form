@@ -127,7 +127,8 @@ form:hover, form:active {
 }
 
 .bottom {
-    margin: 0 3vw 0 5vw;
+    margin: 0 3vw;
+    color: var(--black);
     display: flex;
     justify-content: stretch;
     gap: 3vw;
@@ -169,22 +170,42 @@ button {
     height: 30px;
     flex: 1 0 auto;
     transition: all 120ms;
+    color: var(--black);
 }
 button:hover {
     box-shadow: 0px 3px 6px 6px rgba(49, 48, 46, 0.12);
 }
 button:active {
-    box-shadow: inset 3px 3px 3px 3px rgba(49, 48, 46, 0.05);
+    box-shadow: inset 3px 3px 3px 3px rgba(49, 48, 46, 0.08);
     background-color: var(--background);
-    transform: translateY(2px);
+    transform: translateY(1px);
+    opacity: 0.5;
 }
 
-.checkbox-group {
-    display: flex;
-    gap: 5px;
-    /* justify-content: space-between; */
-}
-label.checkbox-label {
+fieldset,
+fieldset>ul,
+fieldset>ul>li {
+    border: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
+}
+
+legend {
+    padding: 0 !important;
+    float: left;
+}
+.separator {
+    height: 2px;
+    background-color: var(--white);
+    flex: 1 1 auto;
+}
+
+fieldset {
+    gap: 2vw;
+}
+
+fieldset>ul {
+    gap: 12px;
 }
